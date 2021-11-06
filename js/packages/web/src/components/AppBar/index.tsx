@@ -128,7 +128,7 @@ export const AppBar = () => {
           &nbsp;&nbsp;&nbsp;
           <MetaplexMenu />
         </div>
-        <div className="app-right">
+        <div className="app-right app-bar-box">
           {!connected && (
             <HowToBuyModal buttonClassName="modal-button-default" />
           )}
@@ -139,7 +139,7 @@ export const AppBar = () => {
             <>
               <CurrentUserBadge
                 showBalance={false}
-                showAddress={true}
+                showAddress={false}
                 iconSize={24}
               />
               <Notifications />
